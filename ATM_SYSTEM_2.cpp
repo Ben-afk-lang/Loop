@@ -28,8 +28,6 @@ int main()
                 std::cout << "Check Balance\n";
                 std::cout << "Balance: " << BALANCE << " PESOS \n";
                 std::cout << "\n";
-
-                isExit = true;
             break;
 
             case 2:
