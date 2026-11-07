@@ -4,3 +4,5 @@
     https://onecompiler.com/cpp/458hab6rb  
 3. Number Analyzer
     https://onecompiler.com/cpp/458hd6mrt
+4. Multiplication Table
+   https://onecompiler.com/cpp
