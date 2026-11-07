@@ -72,7 +72,7 @@ int main()
             break; 
         }
 
-        if (isExit == true) {
+        if (isExit) {
             isExit = false;
             break;
         }
