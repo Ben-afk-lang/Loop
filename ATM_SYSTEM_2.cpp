@@ -9,9 +9,7 @@ int main()
     
     bool isExit = false;
 
-    while (true) {
-        // std::cout << "Balance: " << BALANCE << "\n";
-        // std::cout << "\n";
+    while (BALANCE >= 0) {
         
         std::cout << "===== ATM SYSTEM =====\n";
         std::cout << "\n";
