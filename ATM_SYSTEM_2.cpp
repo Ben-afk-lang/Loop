@@ -10,8 +10,8 @@ int main()
     bool isExit = false;
 
     while (true) {
-        std::cout << "Balance: " << BALANCE << "\n";
-        std::cout << "\n";
+        // std::cout << "Balance: " << BALANCE << "\n";
+        // std::cout << "\n";
         
         std::cout << "===== ATM SYSTEM =====\n";
         std::cout << "\n";
@@ -26,21 +26,43 @@ int main()
         switch(n) {
             case 1:
                 std::cout << "Check Balance\n";
-                std::cout << "Balance: " << BALANCE << "\n";
+                std::cout << "Balance: " << BALANCE << " PESOS \n";
                 std::cout << "\n";
+
+                isExit = true;
             break;
 
             case 2:
-                std::cout << "Deposit\n";
-                std::cin >> DEPOSIT;
-                BALANCE += DEPOSIT;
+                std::cout << "Deposit ";
+                std::cin >> DEPOSIT ; 
+
+                if (DEPOSIT <= 0) {
+                    std::cout << "Please enter a valid deposit amount. "<< DEPOSIT << " PESOS \n";
+                    std::cout << "Deposit amounts must be greater than zero.\n";
+                } else {
+                    BALANCE += DEPOSIT;
+                    std::cout << "Deposit successful!\n";
+                    std::cout << "our account balance has been updated. A receipt has been sent to your email.\n";
+                }
+                
                 std::cout << "\n";
             break;
 
             case 3:
-                std::cout << "Withdraw\n";
+                std::cout << "Withdraw ";
                 std::cin >> WITHDRAW;
-                BALANCE -= WITHDRAW;
+                
+                if (WITHDRAW <= 0) {
+                    std::cout << "Please enter a valid withdrawal amount. "<< WITHDRAW << " PESOS \n";
+                    std::cout << "Withdrawal amounts must be greater than zero.\n";
+                } else {
+                    if (WITHDRAW > BALANCE) {
+                        std::cout << "Insufficient funds.\n";
+                        std::cout << "You cannot withdraw more than your available balance of " << BALANCE << " PESOS \n";
+                    } else {
+                        BALANCE -= WITHDRAW;
+                    }
+                }
                 std::cout << "\n";
             break;
 
