@@ -10,3 +10,5 @@
    https://onecompiler.com/cpp/458heeg5w
 6.Nested Loops
     https://onecompiler.com/cpp/458hstptb
+7. Nested Loops 2
+    https://onecompiler.com/cpp/458htxct4
