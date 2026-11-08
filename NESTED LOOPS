@@ -1,0 +1,42 @@
+#include <iostream>
+
+int main() 
+{
+
+
+    // ASTERISK TRIANGLE 
+    for (int row = 1; row <= 5; row += 1) {
+        for (int col = 1; col <= row; col += 1) {
+            std::cout << "* ";    
+        }
+        std::cout << "\n";
+    }
+    std::cout << "\n";
+    // NUMBER TRIANGLE 
+    for (int row = 1; row <= 5; row += 1) {
+        for (int col = 1; col <= row; col += 1) {
+            std::cout << col << " ";    
+        }
+        std::cout << "\n";
+    }
+
+    std::cout << "\n";
+    // MULTIPLICATION TABLE TRIANGLE 
+    for (int row = 1; row <= 5; row += 1) {
+        for (int col = 1; col <= 5; col += 1) {
+            std::cout << col * row << " ";    
+        }
+        std::cout << "\n";
+    }
+
+    std::cout << "\n";
+    // REVERSE ASTERISK TRIANGLE 
+    for (int row = 5; row > 0; row -= 1) {
+        for (int col = row; col > 0; col -= 1) {
+            std::cout << "* ";    
+        }
+        std::cout << "\n";
+    }
+
+    return 0;
+}
