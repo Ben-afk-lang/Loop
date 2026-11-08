@@ -14,3 +14,5 @@
     
 7. Nested Loops 2
     https://onecompiler.com/cpp/458htxct4
+8.NUMBER PROCESSING SYSTEM
+    https://onecompiler.com/cpp/458j3rs95
