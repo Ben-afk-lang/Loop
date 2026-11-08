@@ -45,7 +45,7 @@ int main()
 
         if (ln > positive) {
             positive++;
-        } else if (ln < negative) {
+        } else if (ln < 0) {
             negative++;
         } else if (ln == zero) {
             zero++;
