@@ -8,3 +8,5 @@
    https://onecompiler.com/cpp
 5. ATM SYSTEM 2
    https://onecompiler.com/cpp/458heeg5w
+6.Nested Loops
+    https://onecompiler.com/cpp/458hstptb
