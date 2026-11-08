@@ -38,5 +38,14 @@ int main()
         std::cout << "\n";
     }
 
+    std::cout << "\n";
+    // REVERSE NUMBER TRIANGLE 
+    for (int row = 1; row <= 5; row += 1) {
+        for (int col = row; col <= 5; col += 1) {
+            std::cout << col << " ";    
+        }
+        std::cout << "\n";
+    }
+
     return 0;
 }
