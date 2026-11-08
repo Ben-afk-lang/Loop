@@ -5,7 +5,7 @@ int main()
     int n;
     int ln;
     int sum = 0;
-    int average = 0;
+    double average = 0;
     int largest = 0;
     int smallest = 0;
     int even = 0;
@@ -27,14 +27,14 @@ int main()
         std::cout << "\n";  
 
         sum += ln;
-        average = sum / i;
-
-        if (ln > largest) {
+        average = static_cast<double>(sum) / i;
+        
+        if (ln > 0) {
             largest = ln;
         }
 
-        if (ln < smallest) {
-            smallest = ln;
+        if (ln < 0) {
+                smallest = ln;
         }
 
         if (ln % 2 == 0) {
@@ -43,7 +43,7 @@ int main()
             odd++;
         }
 
-        if (ln > positive) {
+        if (ln > 0) {
             positive++;
         } else if (ln < 0) {
             negative++;
